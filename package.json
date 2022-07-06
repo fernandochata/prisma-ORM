@@ -1,0 +1,30 @@
+{
+  "name": "prisma-orm",
+  "version": "1.0.0",
+  "description": "https://www.prisma.io/",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon script.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandochata/prisma-ORM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandochata/prisma-ORM/issues"
+  },
+  "homepage": "https://github.com/fernandochata/prisma-ORM#readme",
+  "devDependencies": {
+    "@types/node": "^18.0.2",
+    "nodemon": "^2.0.19",
+    "prisma": "^4.0.0",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.0.0"
+  }
+}
