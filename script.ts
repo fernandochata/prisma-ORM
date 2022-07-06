@@ -3,13 +3,12 @@ const prisma = new PrismaClient()
 
 
 async function main() {
-    const user = await prisma.user.create({    data: {      name: 'Alice'    }})
-    console.log('Created new user: ', user)
-    
 
-    // await prisma.post.deleteMany()
-    // await prisma.user.deleteMany({})
-    // const users = await prisma.user.create({
+    //* https://www.prisma.io/docs/reference/api-reference/prisma-client-reference#filter-conditions-and-operators
+
+
+    //* Create a new user
+    // const info = await prisma.user.create({
     //     data: {
     //         name: 'Alice',
     //         email: 'test@test.com',
@@ -19,16 +18,33 @@ async function main() {
     //                     title: 'My first post',
     //                     content: 'This is my first post'
     //                 }
-    //             ]
-
-    //             }
+    //             ]}
     //     },
     // })
 
-    // const users = await prisma.user.findMany()
-    // console.log( users)
+    //* Read users
+    // const info = await prisma.user.findMany()
+
+    //* Update a user
+    // const info = await prisma.user.update({
+    //     where: {
+    //         id: 1
+    //         },
+    //         data: {
+    //             name: 'Bob'
+    //         }
+    //     })
+                            
+    //* Delete a user
+    // await prisma.user.deleteMany()
+    // await prisma.user.delete({
+    //     where: {
+    //         id: 1
+    //         }
+    //     })
     
-    
+
+    //console.log('Result: ', info)
 }
 
 main()
